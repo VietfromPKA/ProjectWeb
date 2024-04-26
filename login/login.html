@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="form sign_in">
+                <h3>Đăng Nhập</h3>
+                <span></span>
+
+                <form action="#" id="form_input">
+                    <div class="type">
+                        <input type="email" placeholder="Email" name="" id="email">
+
+                    </div>
+                    <div class="type">
+                        <input type="password" placeholder="Mật Khẩu" name="" id="password">
+
+                    </div>
+
+                    <div class="forgot">
+                        <span>Quên mật khẩu ?</span>
+                    </div>
+
+                    <button class="btn bkg">Đăng Nhập</button>
+                </form>
+            </div>
+    
+            <div class="form sign_up">
+                <h3>Đăng Ký</h3>
+
+                <form action="#" id="form_input">
+                    <div class="type">
+
+                        <input type="text" name="" placeholder="Họ và Tên" id="name">
+                    </div>
+                    <div class="type">
+                        
+                        <input type="email" name="" placeholder="Email" id="email">
+                    </div>
+                    <div class="type">
+
+                        <input type="password" name="" placeholder="Mật Khẩu" id="password">
+                    </div>
+
+                    <button class="btn bkg">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="page page_signIn">
+                <h3>Chào bạn mới</h3>
+                <p>Để đăng ký tài khoản Quiz App mới hãy chọn</p>
+
+                <button class="btn btnSign-in">Đăng Ký<i class="bi bi-arrow-right"></i></button>
+            </div>
+
+            <div class="page page_signUp">
+                <h3>Chào Bạn</h3>
+                <p>Nếu bạn đã có tài khoản vui lòng </p>
+
+                <button class="btn btnSign-up">
+                    <i class="bi bi-arrow-left"></i> Đăng nhập
+				</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
