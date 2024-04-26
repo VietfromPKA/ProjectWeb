@@ -3,35 +3,38 @@
     <head>
         <title>Quizz App</title>
         <meta charset ="UTF-8">
+        <script src="https://kit.fontawesome.com/c991f90e06.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div>
-            <div class="menu_tren">
-                <div>
-                    <img src="./img/logo.png" alt="logo" id="logo">
-                </div>
-                <div class="search-container">
-                    <!-- Input để nhập nội dung cần tìm kiếm -->
+            <ul class="menu">
+                <li><img src="./img/logo.png" alt="logo" id="logo"></li>
+                <li>
                     <input type="text" class="search-input" placeholder="Tìm quiz ...">
-                    <!-- Button để kích hoạt tìm kiếm -->
-                    <button class="search-button">Tìm kiếm</button>
-                </div>
-                <div class="login">
-                    <button id="nut-login">
-                        <a href="./login/login.html" id="text-login">Đăng nhập</a>
-                    </button>
-                </div>
-                <div class="box-container">
-                    <div class="box-inner">
-                        <button id="nut">Trang Chủ</button>
-                        <button id="nut">Tạo Quiz</button>
-                        <button id="nut">Lịch Sử</button>
-                        <button id="nut">Thông Tin</button>
-                        <button id="nut">Liên Hệ</button>
-                    </div>
-                </div>              
-            </div>
-        </div>
+                        <button id="nut-tk">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            Tìm kiếm</button>
+                </li>
+                <li><a href="index.html">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span>Trang Chủ</span></a></li>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-puzzle-piece"></i></span>
+                    <span>Tạo Quizz</span></a></li>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                    Lịch Sử</a></li>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-bookmark"></i></span>
+                    Thông Tin</a></li>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    Liên Hệ</a></li>
+                <li><a href="./login/login.html">
+                    <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                    Đăng nhập/Tạo tài khoản</a></li>
+            </ul>     
+        </div>      
     </body>
 </html>
