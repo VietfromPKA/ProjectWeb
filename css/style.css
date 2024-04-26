@@ -1,0 +1,93 @@
+/* Định dạng cho class `.menu_tren` */
+.menu_tren {
+    position: relative; /* Xác định vị trí của phần tử tương đối so với vị trí bình thường của nó */
+    background-color: #5E17EB; /* Thiết lập màu nền thành tím (#5E17EB) */
+    width: 100%; /* Thiết lập chiều rộng bằng 100% kích thước của container */
+    height: 60px; /* Thiết lập chiều cao thành 60 pixel */
+    border-radius: 10px; /* Thêm bo tròn góc với bán kính 10 pixel */
+  }
+  
+  /* Định dạng cho id `#logo` */
+#logo {
+    width: 45px; /* Thiết lập chiều rộng thành 45 pixel */
+    height: 45px; /* Thiết lập chiều cao thành 45 pixel */
+    position: absolute; /* Xác định vị trí của phần tử tuyệt đối trong container */
+    left: 5px; /* Thiết lập lề trái thành 5 pixel */
+    top: 10px; /* Thiết lập lề trên thành 10 pixel */
+}
+  
+  /* Định dạng cho class `.search-container` */
+.search-container {
+    position: absolute; /* Xác định vị trí của phần tử tuyệt đối trong container */
+    top: 50%; /* Căn chỉnh phần tử theo chiều dọc sử dụng translate */
+    transform: translateY(-50%); /* Di chuyển phần tử lên một nửa chiều cao của nó */
+    left: 85px; /* Thiết lập lề trái thành 55 pixel */
+}
+  
+  /* Định dạng cho class `.search-input` */
+.search-input {
+    padding: 8px; /* Thêm khoảng cách 8 pixel vào tất cả các cạnh */
+    width: 200px; /* Thiết lập chiều rộng thành 200 pixel */
+    border: 1px solid #ccc; /* Thêm đường viền 1 pixel rắn với màu #ccc (xám nhạt) */
+    border-radius: 4px; /* Thêm bo tròn góc với bán kính 4 pixel */
+    font-size: 16px; /* Thiết lập kích thước chữ thành 16 pixel */
+    margin-right: 5px; /* Thêm lề phải 5 pixel */
+}
+  
+  /* Định dạng cho class `.search-button` */
+.search-button {
+    padding: 8px 12px; /* Thêm khoảng cách 8 pixel trên/dưới và 12 pixel trái/phải */
+    background-color: #4CAF50;
+    font-family: roboto;
+    color: white; /* Thiết lập màu chữ thành trắng */
+    border: none; /* Xóa đường viền */
+    border-radius: 4px; /* Thêm bo tròn góc với bán kính 4 pixel */
+    cursor: pointer; /* Thay đổi con trỏ chuột thành con trỏ tay khi di chuột qua */
+    font-size: 18px; /* Thiết lập kích thước chữ thành 16 pixel */
+}
+  
+  /* Áp dụng hiệu ứng di chuột qua cho `.search-button` */
+.search-button:hover {
+    background-color: #9478cd; /* Thiết lập màu nền thành tím (#5E17EB) */
+}
+#nut-login{
+    padding: 8px 12px; /* Thêm khoảng cách 8 pixel trên/dưới và 12 pixel trái/phải */
+    background-color: #4CAF50; 
+    font-family: roboto;
+    font-size: 18px;
+    border: none; /* Xóa đường viền */
+    border-radius: 4px; /* Thêm bo tròn góc với bán kính 4 pixel */
+    cursor: pointer; 
+}
+#nut-login:hover {
+    background-color: #9478cd; /* Thiết lập màu nền thành tím (#5E17EB) */
+}
+#text-login{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    position: absolute; /* Xác định vị trí của phần tử tuyệt đối trong container */
+    top: 50%; /* Căn chỉnh phần tử theo chiều dọc sử dụng translate */
+    transform: translateY(-50%); /* Di chuyển phần tử lên một nửa chiều cao của nó */
+    right: 65px; 
+}
+.box-inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 41%;
+}
+#nut{
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    font-family: roboto;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#nut:hover {
+    background-color: #9478cd; /* Thiết lập màu nền thành tím (#5E17EB) */
+}
