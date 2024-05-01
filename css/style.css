@@ -1,3 +1,12 @@
+.bgr{
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.div-1{
+    display: flex;
+}
 .menu{
     background-color: rgb(255, 111, 1);
     min-height: 50px;
@@ -40,4 +49,25 @@
 .search-input{
     border-radius: 5px;
     border: none;
+}
+.bgr2{
+    display: inline;
+}
+.div-2{
+    display: inline-flex;
+    background-color: rgb(212, 210, 207);
+    height: 250px;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 5%;
+    box-shadow: 5px 5px rgb(198, 184, 184);
+}
+.div-3{
+    display: inline-flex;
+    background-color: rgb(212, 210, 207);
+    height: 250px;
+    width: 35%;
+    border-radius: 20px;
+    margin-left: 5%;
+    box-shadow: 5px 5px rgb(198, 184, 184);
 }
