@@ -1,3 +1,8 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
 .bgr{
     display: block;
     background-color: white;
@@ -12,8 +17,6 @@
     min-height: 50px;
     width: 100%;
     border-radius: 5px;
-
-
 }
 .menu li{
     display: inline;
@@ -53,21 +56,32 @@
 .bgr2{
     display: flex;
 }
+
+.div-2, .div-3{
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
 .div-2{
     display: inline-flex;
     background-color: rgb(212, 210, 207);
-    height: 250px;
     width: 45%;
-    border-radius: 20px;
     margin-left: 5%;
     box-shadow: 5px 5px rgb(198, 184, 184);
 }
 .div-3{
     display: inline-flex;
     background-color: rgb(212, 210, 207);
-    height: 250px;
     width: 35%;
-    border-radius: 20px;
-    margin-left: 5%;
+    margin-left: 10%;
     box-shadow: 5px 5px rgb(198, 184, 184);
+}
+.xacnhan{
+    display: block;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+
 }
