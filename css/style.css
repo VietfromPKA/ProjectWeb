@@ -57,12 +57,14 @@ html{
     border: 1px solid black;
     border-radius: 20px;
 }
-
 .div-2-1{
     display: block;
     width: 45%;
     margin-left: 5%;
-    box-shadow: 5px 5px rgb(198, 184, 184);
+    background-image: url(../img/back1.png),
+    linear-gradient(0, rgba(182, 3, 3, 0), rgba(252, 151, 0, 0.985))
+    ;
+    box-shadow: 5px 5px rgb(198, 184, 184);  
 }
 .div-2-2{
     display: flex;
