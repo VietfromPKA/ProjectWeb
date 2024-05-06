@@ -25,6 +25,7 @@ html{
 }
 .menu li a{
     color: white;
+    font-size: 15px;
     text-decoration: none;
 }
 #logo{
@@ -34,54 +35,91 @@ html{
     transform: translateY(20%);
     margin-left: -25px;
 }
-.menu li a:hover{
+.menu li a:hover, #nut-tk:hover{
+    font-size: 25px;
     color: black;
 }
-#text-tk{
-    color: white;
-} 
 #nut-tk{
     background-color: rgb(255, 111, 1);
     color: white;
     border: none;
 }
-#nut-tk:hover{
-    background-color: rgb(255, 111, 1);
-    color: black;
-}
 .search-input{
     border-radius: 5px;
     border: none;
 }
-.bgr2{
+.div-2{
     display: flex;
 }
 
-.div-2, .div-3{
+.div-2-1, .div-2-2{
     height: 250px;
     border: 1px solid black;
     border-radius: 20px;
 }
 
-.div-2{
-    display: inline-flex;
-    background-color: rgb(212, 210, 207);
+.div-2-1{
+    display: block;
     width: 45%;
     margin-left: 5%;
     box-shadow: 5px 5px rgb(198, 184, 184);
 }
-.div-3{
-    display: inline-flex;
+.div-2-2{
+    display: flex;
     background-color: rgb(212, 210, 207);
     width: 35%;
     margin-left: 10%;
     box-shadow: 5px 5px rgb(198, 184, 184);
 }
-.xacnhan{
-    display: block;
+.diva1{
+    height: 50%;
+}
+.diva2{
+    display: flex;
+}
+.ma1{
+    width: 80%;
+    height: 50%;
+    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.ma1:hover{
+    background-color: rgb(254, 254, 254);
+    color: rgb(0, 0, 0);
+
+}
+.diva21, .diva22{
+    width: 50%;
+    height: 100%;
+}
+.btn-xn1{
+    background-color: rgba(43, 1, 255, 0.578);
     color: white;
     border: none;
     border-radius: 5px;
-    position: absolute;
+    width: 60%;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 20%;
+    box-shadow: 5px 5px rgba(43, 1, 255, 0.148);
+}
+.btn-xn2{
+    background-color: rgba(43, 1, 255, 0.578);
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 20%;
+    box-shadow: 5px 5px rgba(43, 1, 255, 0.148);
+}
+.btn-xn1:hover, .btn-xn2:hover{
+    background-color: rgb(255, 111, 1);
+    font-size: 30px;
+    color: black;
 
 }
