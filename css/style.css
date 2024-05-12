@@ -37,7 +37,8 @@ html{
     transform: translateY(20%);
     margin-left: -25px;
 }
-.menu li a:hover, #nut-tk:hover, .search-input:hover{
+.menu li a:hover{
+    font-size: 20px;
     color: rgb(255, 111, 1);
 }
 #nut-tk{
