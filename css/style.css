@@ -12,6 +12,7 @@ html{
 }
 .div-1{
     display: flex;
+    
 }
 .menu{
     background-color: rgb(5, 54, 119);
@@ -25,7 +26,7 @@ html{
     line-height: 50px;
 }
 .menu li a{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 15px;
     text-decoration: none;
 }
@@ -37,18 +38,30 @@ html{
     margin-left: -25px;
 }
 .menu li a:hover, #nut-tk:hover, .search-input:hover{
-    font-size: 25px;
-    color: black;
+    color: rgb(255, 111, 1);
 }
 #nut-tk{
     background-color: rgb(5, 54, 119);
     color: white;
     border: none;
+    
 }
-.search-input{
-    border-radius: 8px;
-    font-size: 20px;
+.search-form{
+    border-radius: 8px;   
     border: none;
+    display:inline;
+    background-color:white;
+    border: 1px solid black;
+    padding:5px;
+}
+.search-form .search-input{
+    border: 1px solid transparent;
+    outline:none;
+}
+.search-form button#nut-tk{
+    background-color: rgb(250 250 250);
+    color: black;
+
 }
 .div-2{
     display: flex;
@@ -192,4 +205,9 @@ html{
 }
 .info:hover{
     color: silver;
+}
+
+.fa-solid::before{
+
+    padding:10px
 }
