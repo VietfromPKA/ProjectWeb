@@ -79,8 +79,7 @@ html{
     width: 45%;
     margin-left: 5%;
     background-image: url(../img/back1.png),
-    linear-gradient(0, rgba(182, 3, 3, 0), rgba(252, 151, 0, 0.985))
-    ;
+    linear-gradient(0, rgba(182, 3, 3, 0), rgba(252, 151, 0, 0.985));
     box-shadow: 5px 5px rgb(198, 184, 184);
     
 }
@@ -182,7 +181,6 @@ html{
     height: 450px;
     background-color: rgb(59, 59, 59);
     margin-top: 30px;
-
 }
 .div-5-1{
     width: 100%;
@@ -209,6 +207,5 @@ html{
 }
 
 .fa-solid::before{
-
     padding:10px
 }
