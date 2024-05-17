@@ -1,0 +1,143 @@
+.bgr{
+  display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.div-1{
+    display: flex;
+}
+.menu{
+    background-color: rgb(5, 54, 119);
+    min-height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+.menu li{
+    display: inline;
+    padding: 30px 30px;
+    line-height: 50px;
+}
+.menu li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(20%);
+    margin-left: -25px;
+}
+.menu li a:hover{
+    font-size: 20px;
+    color: rgb(255, 111, 1);
+}
+#nut-tk{
+    background-color: rgb(5, 54, 119);
+    color: white;
+    border: none;
+    
+}
+.search-form{
+    border-radius: 8px;   
+    border: none;
+    display:inline;
+    background-color:white;
+    border: 1px solid black;
+    padding:5px;
+}
+.search-form .search-input{
+    border: 1px solid transparent;
+    outline:none;
+}
+.search-form, #nut-tk{
+    background-color: rgb(250 250 250);
+    color: black;
+
+}
+.div-2{
+  display: flex;
+  width: 100%;
+}
+.sidebar {
+    display: block;
+    width: 10%;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    background-color: rgb(153, 169, 169);
+    padding: 10px;
+    margin-bottom: 10px;
+
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+.content{
+  display: block;
+  background-color: antiquewhite;
+  margin-left: 5%;
+  padding: 25px;
+  width: 85%;
+}
+#lop1{
+  display: flex-inline;
+  background-color: antiquewhite;
+  margin-left: 5%;
+  padding: 5px;
+  width: 85%;
+
+}
+
+
+
+
+.div-5{
+  display: block;
+  width: 100%;
+  height: 450px;
+  background-color: rgb(59, 59, 59);
+  margin-top: 30px;
+}
+.div-5-1{
+  width: 100%;
+  display: flex;
+}
+.div-5-1 p{
+  color: rgb(95, 95, 95);
+}
+.div511, .div512, .div513, .div514, .div515{
+  font-size: 20px;
+  padding: 10px;
+  width: 20%;
+  margin-left: 20px;
+}
+.info{
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  color: rgb(110, 106, 106);
+  text-decoration: none;
+}
+.info:hover{
+  color: silver;
+}
+
+.fa-solid::before{
+  padding:10px
+}
+  
+  
