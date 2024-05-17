@@ -1,5 +1,5 @@
 document.querySelector('.ball').addEventListener('click', function() {
-    window.location.href = './html/ball.html';
+    window.location.href = './html/quiz.html';
 });
 document.querySelector('.math').addEventListener('click', function() {
     window.location.href = './html/math.html';
