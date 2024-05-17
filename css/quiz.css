@@ -121,7 +121,25 @@ button {
     box-shadow: 0 0 3px rgba(9, 8, 8, 0.833);
     border-radius: 10px;
     cursor: pointer;
-  }
+  } 
+.quiz_question ul li.active {
+  background: var(--main-clr);
+  color: white;
+  transition: 0.5s;
+}
+.quiz_question ul li.incorrect {
+  background: red;
+  color: white;
+  transition: 0.5s;
+}
+.quiz_question ul li span:nth-child(2) {
+  margin-left: 1rem;
+}
+.quiz_question > p {
+  font-weight: bold;
+  font-size: 1.6rem;
+  height: 6rem;
+}
   .quiz_numbers {
     display: flex;
     gap: 1.5rem;
@@ -150,5 +168,16 @@ button {
     background: white;
     border: 1px solid var(--main-clr);
     color: var(--main-clr);
+  }
+  .quiz_numbers > ul > li.selected {
+    background-color: var(--main-clr);
+    color: white;
+  }
+  .quiz_numbers > ul > li.active {
+    border: 2px solid var(--main-clr);
+  }
+  .quiz_numbers > ul > li.incorrect {
+    background-color: red;
+    color: white;
   }
   
