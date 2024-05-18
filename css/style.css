@@ -6,10 +6,11 @@ html{
 }
 :root{
     --menu: rgb(5, 54, 119);
+    --trang: white;
 }
 .bgr{
     display: block;
-    background-color: white;
+    background-color: var(--trang);
     height: 100%;
     width: 100%;
 }
@@ -30,7 +31,7 @@ html{
     line-height: 50px;
 }
 .menu li a, .menu-setting{
-    color: rgb(255, 255, 255);
+    color: var(--trang);
     font-size: 15px;
     text-decoration: none;
 }
@@ -43,11 +44,11 @@ html{
 }
 .menu li a:hover, .menu-setting:hover{
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: var(--trang);
 }
 #nut-tk{
     background-color: rgb(5, 54, 119);
-    color: white;
+    color: var(--trang);
     border: none;
     
 }
@@ -55,7 +56,7 @@ html{
     border-radius: 8px;   
     border: none;
     display:inline;
-    background-color:white;
+    background-color:var(--trang);
     border: 1px solid black;
     padding:5px;
 }
@@ -109,7 +110,7 @@ html{
     border-radius: 10px;
 }
 .ma1:hover{
-    background-color: rgb(254, 254, 254);
+    background-color: var(--trang);
     color: rgb(0, 0, 0);
 
 }
@@ -120,7 +121,7 @@ html{
 .btn-xn1{
     background-color: rgba(43, 1, 255, 0.578);
     font-size: 20px;
-    color: white;
+    color: var(--trang);
     border: none;
     border-radius: 5px;
     width: 60%;
@@ -132,7 +133,7 @@ html{
 .btn-xn2{
     background-color: rgba(43, 1, 255, 0.578);
     font-size: 20px;
-    color: white;
+    color: var(--trang);
     border: none;
     border-radius: 5px;
     width: 60%;
@@ -183,12 +184,15 @@ html{
     width: 100%;
     display: flex;
 }
-.div-5-1 p{
+.div-5-1 a{
+    display: block;
     color: rgb(95, 95, 95);
+    text-decoration: none;
+    margin-top: 20px;
 }
 .div511, .div512, .div513, .div514, .div515{
+    display: inline;
     font-size: 20px;
-    padding: 10px;
     width: 20%;
     margin-left: 20px;
 }
