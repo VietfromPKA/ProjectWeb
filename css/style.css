@@ -3,10 +3,12 @@ html{
     padding: 0;
     background-color: rgb(217, 215, 215);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
     --menu: rgb(5, 54, 119);
     --trang: white;
+    --cam: rgb(255, 111, 1);
 }
 .bgr{
     display: block;
@@ -44,8 +46,7 @@ html{
     margin-left: -25px;
 }
  .menu li a:hover, .menu-setting:hover,.menu-creat:hover{
-    font-size: 20px;
-    color: var(--trang);
+    color: var(--cam);
 }
 #nut-tk{
     background-color: rgb(5, 54, 119);
@@ -146,7 +147,7 @@ html{
     box-shadow: 5px 5px rgba(43, 1, 255, 0.148);
 }
 .btn-xn1:hover, .btn-xn2:hover{
-    background-color: rgb(255, 111, 1);
+    background-color: var(--cam);
     font-size: 30px;
     color: black;
 
@@ -261,7 +262,4 @@ html{
 .dropdown-creat a{
     display: block;
     padding:10px;
-}
-html{
-    scroll-behavior: smooth;
 }
