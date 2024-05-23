@@ -204,7 +204,7 @@ html{
     color: rgb(110, 106, 106);
     text-decoration: none;
 }
-.info:hover{
+.info:hover, .div-5-1 a:hover{
     color: silver;
 }
 
