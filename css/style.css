@@ -7,6 +7,9 @@ html{
     --trang: white;
     --cam: rgb(255, 111, 1);
 }
+body{
+    overflow-x: hidden;
+}
 .bgr{
     display: block;
     background-color: var(--trang);
@@ -152,7 +155,7 @@ html{
 .div-21{
     display: flex;
     width: 100%;
-    margin: 2% 5% 2% 5%;
+    /* margin: 2% 5% 2% 5%; */
 }
 .div-21 i{
     color: gold;
@@ -204,7 +207,7 @@ html{
     color: rgb(110, 106, 106);
     text-decoration: none;
 }
-.info:hover{
+.info:hover, .div-5-1 a:hover{
     color: silver;
 }
 
@@ -337,5 +340,67 @@ html{
 }
 .slick-dots .slick-active button {
   background-color: #2cccff;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 40px;
+    margin-top: 40px;
+}
+.card-div{
+    flex-flow: column;
+    width: 348px;
+    height: 212px;
+    padding:24px;
+    display: flex;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    grid-row-gap: 18px;
+    align-items: flex-start;
+    border: 2px solid rgb(255, 128, 0);
+    font-size: 18px;
+    line-height: 26px;
+}
+.teacher-slide{
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+}
+
+.wap{
+    vertical-align: top;
+    white-space: normal;
+    text-align: left;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.tea{
+    border: 5px solid yellow;
+    background-color:red;
+    /* box-shadow: -7px 7px 0 0 var(--medium-violet-red); */
+    border-radius: 12px;
+    width: 324px;
+    /* height: 341px; */
+    margin-right: 24px;
+   
+}
+.block-a{
+    display: flex;
+    grid-column-gap: 18px;
+}
+.image-271 {
+    border-radius: 12px;
+    max-width: 84px;
+    max-height: 84px;
+    padding-right: 0;
+}
+.block-infor{
+    grid-row-gap: 10px;
+    flex-direction: column;
+    align-self: center;
+    display: flex;
 }
 
