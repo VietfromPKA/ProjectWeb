@@ -10,6 +10,12 @@ html{
 body{
     overflow-x: hidden;
 }
+.container{
+    padding:0 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1320px;
+}
 .bgr{
     display: block;
     background-color: var(--trang);
@@ -163,7 +169,7 @@ body{
 .div-3{
     display: flex;
     height: 20rem;
-    margin: 0% 5% 5% 5%;
+    /* margin: 0% 5% 5% 5%; */
     gap: 1rem;
 }
 .div-3 > div{
@@ -271,10 +277,11 @@ body{
   padding: 0;
 }
 
-.image-slider {
+/* .image-slider {
   padding-bottom: 50px;
-  margin: 0% 5% 0% 5%;
-}
+  /* margin: 0% 5% 0% 5%; 
+}*/
+
 .image {
   height: 300px;
   width: 100%;
@@ -344,16 +351,15 @@ body{
 .cards-container {
     display: flex;
     justify-content: center;
-    grid-column-gap: 80px;
-    margin-top: 40px;
-    margin:0% 5% 0% 5%;
+    /* margin-top: 40px; */
+    /* margin:0% 5% 0% 5%; */
 }
 .card-div{
-    flex-flow: column;
-    width: 348px;
     height: 212px;
-    padding:18px;
-    display: flex;
+    padding:10px;
+    flex-basis: 25%;
+}
+.card-content{
     border-radius: 15px;
     grid-row-gap: 24px;
     align-items: flex-start;
@@ -362,8 +368,8 @@ body{
     border-style: dashed;
     border-width: 2px;
     border-color: #000;
-    background-color:--var(trang);
-
+    height: inherit;
+    padding: 12px;
 }
 .teacher-slide{
     display: flex;
@@ -371,7 +377,7 @@ body{
     justify-content: center;
     height: 100%;
     font-size: 16px;
-    margin: 0% 5% 3% 5%;
+    
 
 }
 
@@ -401,7 +407,7 @@ body{
     padding-bottom: 3%;
 }
 .image-271 {
-    border-radius: 12px;
+    border-radius: 20px;
     max-width: 84px;
     max-height: 84px;
     padding-right: 0;
@@ -411,5 +417,18 @@ body{
     flex-direction: column;
     align-self: center;
     display: flex;
+}
+
+.paragraph{
+    padding-bottom: 30px;
+}
+.section-heading{
+    padding-bottom: 20px;
+}
+.section-heading i{
+    color: gold;
+}
+section {
+    margin:32px 0px 40px;
 }
 
