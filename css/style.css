@@ -96,7 +96,7 @@ body{
     display: flex;
     background-color: rgb(212, 210, 207);
     width: 35%;
-    margin-left: 10%;
+    margin: 0% 5% 0% 10%;
     box-shadow: 5px 5px rgb(198, 184, 184);
 }
 .diva1{
@@ -344,22 +344,26 @@ body{
 .cards-container {
     display: flex;
     justify-content: center;
-    grid-column-gap: 40px;
+    grid-column-gap: 80px;
     margin-top: 40px;
+    margin:0% 5% 0% 5%;
 }
 .card-div{
     flex-flow: column;
     width: 348px;
     height: 212px;
-    padding:24px;
+    padding:18px;
     display: flex;
-    background-color: #f1f1f1;
     border-radius: 15px;
-    grid-row-gap: 18px;
+    grid-row-gap: 24px;
     align-items: flex-start;
-    border: 2px solid rgb(255, 128, 0);
     font-size: 18px;
     line-height: 26px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #000;
+    background-color:--var(trang);
+
 }
 .teacher-slide{
     display: flex;
@@ -381,7 +385,7 @@ body{
     padding: 3%;
 }
 .tea{
-    background-color:rgb(255, 255, 255);
+    background-color:--var(trang);
     /* box-shadow: -7px 7px 0 0 var(--medium-violet-red); */
     border-radius: 12px;
     width: 324px;
