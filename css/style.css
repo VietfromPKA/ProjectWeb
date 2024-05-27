@@ -71,6 +71,7 @@ body{
 .search-form .search-input{
     border: 1px solid transparent;
     outline:none;
+    color: black;
 }
 .search-form #nut-tk span i::before{
     background-color: transparent;
