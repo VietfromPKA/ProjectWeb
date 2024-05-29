@@ -229,10 +229,6 @@ body{
     cursor: pointer;
     line-height: 1.3;
 }
-.menu-setting:hover .dropdown-setting {
-    opacity: 1;
-}
-
 .dropdown-setting {
     background-color:var(--menu);
     opacity: 0;
@@ -248,15 +244,19 @@ body{
     display: block;
     padding:10px;
 }
+.dropdown-setting.demo2{
+  opacity:1;
+}
+
 .menu-creat{
     position: relative;
     display:inline;
     cursor: pointer;
     line-height: 1.3;
 }
-.menu-creat:hover .dropdown-creat {
+/* .menu-creat:hover .dropdown-creat {
     opacity: 1;
-}
+} */
 .dropdown-creat {
     background-color:var(--menu);
     opacity: 0;
@@ -271,6 +271,14 @@ body{
 .dropdown-creat a{
     display: block;
     padding:10px;
+}
+.dropdown-creat.demo{
+  opacity:1;
+}
+button{
+  background-color: var(--menu);
+  border:1px solid transparent;
+
 }
 *,
 *:before,
