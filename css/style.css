@@ -487,8 +487,8 @@ section {
   .class-content {
     display: none;
     background-color: antiquewhite;
-    margin-left: 5%;
-    width: 85%;
+    margin: 0% 5% 0% 5%;
+    width: 100%;
 }
   .class-content p{
     padding: 2% 0% 0% 2%;
@@ -499,6 +499,59 @@ section {
     color: var(--menu);
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.361);
   }
+  .vip{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #f0f0f0;
+    padding: 1%;
+    margin: 0% 3% 5% -5%;
+    border-radius: 15px;
+  }
+  .vip1, .vip2{
+    display: block;
+    width: 20%;
+    height: 350px;
+  }
+  .vip1{
+    border-radius: 15px;
+    margin:2% 2.5% 5% 2.5%;
+  }
+  .vip2{
+    border-radius: 15px;
+    margin: 5% 2.5% 2% 2.5%;
+  }
+  .vip3{
+    width: 100%;
+    height: 70%;
+    background-color: var(--trang);
+    border-radius: 15px;
+    border: 2px dashed #000;
+
+  }
+  .vip3 li{
+    margin:2% 2% 0% 15%;
+  }
+  .vip4{
+    height: 15%;
+    background-color: #a1a1cb;
+    margin-top: 15%;
+    border-radius: 15px;
+    border: 2px dashed #000;
+  }
+  .vip4 p{
+    color: #000;
+    text-align: center;
+    padding: 8%;
+  }
+  .doitac{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    background-color: #f0f0f0;
+    padding: 1%;
+    margin: 0% 3% 0% -5%;
+    border-radius: 15px;}
 
 
 .switch {
