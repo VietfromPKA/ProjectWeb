@@ -24,7 +24,7 @@
                 <li><img src="./img/logo.png" alt="logo" id="logo"></li>
                 <li>
                     <form class="search-form">
-                        <input type="text" class="search-input" placeholder="">
+                        <input type="text" class="search-input" placeholder="search...">
                         <button id="nut-tk">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         </button>
@@ -36,8 +36,8 @@
                 <li>
                     <div class="menu-creat">
                         <span><i class="fa-solid fa-puzzle-piece"></i></span>
-                        Creat Quizz</a>
-                        <div class="dropdown-creat">
+                        <button onclick="myFunction()">Creat Quizz</button>
+                        <div class="dropdown-creat" id ="mycreat">
                             <a href="#">Normal Quizz</a>
                             <a href="#">Quick Quizz</a>
                             <a href="#">Test</a>
@@ -54,12 +54,22 @@
                 <li>
                     <div class="menu-setting">
                         <span><i class="fa-solid fa-gears"></i></span>
-                        Setting</a>
-                        <div class="dropdown-setting">
-                            <a href="#">Music</a>
+                        <button onclick="setFunction()">Setting</button>
+                        <div class="dropdown-setting" id ="myset">
+                            <div class="audio">
+                                <div class="music">Music</div>
+                                <div class="toggle-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" >
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                             <a href="#">Sound effect </a>
                             <a href="#">Memes</a>
+                            
                         </div>
+                        
                     </div>
                 </li>
                 <li>
@@ -221,7 +231,7 @@
         <section class="feedback">
             <div class="container">
                 <div class="section-heading">
-                    <h2><i class="fa-solid fa-star"></i> Teachers Feedback</h2>
+                    <h2><i class="fa-solid fa-star"></i>  Client Feedback</h2>
                 </div>
 
                 <div class="teacher-slide">
@@ -323,16 +333,16 @@
                     <a href="./html/ds_quiz.html">Racing</a>
                 </div>
                 <div class="div514">
-                    <h2>Different</h2>
-                    <a href="./html/ds_quiz.html">Music</a>
-                    <a href="./html/ds_quiz.html">Transport</a>
-                    <a href="./html/ds_quiz.html">Technology</a>
-                    <a href="./html/ds_quiz.html">Food</a>
-                    <a href="./html/ds_quiz.html">Animal</a>
+                    <h2>Highlight</h2>
+                    <a href="./html/ds_quiz.html">Q-Chat AI</a>
+                    <a href="./html/ds_quiz.html">Virtual Room</a>
+                    <a href="./html/ds_quiz.html">Flashcards</a>
+                    <a href="./html/ds_quiz.html">Tests</a>
+                    <a href="./html/ds_quiz.html">Quick Quizz</a>
                 </div>
                 <div class="div515">
                     <h2>Support</h2>
-                    <a href="#">Create Quizz</a>
+                    <a href="#"></a>
                     <a href="#">Searching</a>
                     <a href="./login/login.html">Sign up/ Log in</a>
                     <a href="#">Liên Hệ:</a>
@@ -349,7 +359,6 @@
                         <a class="info" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                     </p>
                 </div>
-                <div class="div522"></div>
             </div>
         </div>
     </footer>
@@ -361,6 +370,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JavaScript/quiz.js"></script>
     </script>
+    <script src="./JavaScript/dropcreat.js"></script>
 </body>
 
 </html>

@@ -71,6 +71,7 @@ body{
 .search-form .search-input{
     border: 1px solid transparent;
     outline:none;
+    color: black;
 }
 .search-form #nut-tk span i::before{
     background-color: transparent;
@@ -186,7 +187,6 @@ body{
 .div-5{
     display: block;
     width: 100%;
-    height: 450px;
     background-color: rgb(59, 59, 59);
 }
 .div-5-1{
@@ -205,6 +205,9 @@ body{
     width: 20%;
     margin-top: 4%;
     margin-left: 20px;
+}
+.div-5-2{
+    padding: 15px 0px 10px;
 }
 .info{
     font-size: 24px;
@@ -226,10 +229,6 @@ body{
     cursor: pointer;
     line-height: 1.3;
 }
-.menu-setting:hover .dropdown-setting {
-    opacity: 1;
-}
-
 .dropdown-setting {
     background-color:var(--menu);
     opacity: 0;
@@ -245,15 +244,19 @@ body{
     display: block;
     padding:10px;
 }
+.dropdown-setting.demo2{
+  opacity:1;
+}
+
 .menu-creat{
     position: relative;
     display:inline;
     cursor: pointer;
     line-height: 1.3;
 }
-.menu-creat:hover .dropdown-creat {
+/* .menu-creat:hover .dropdown-creat {
     opacity: 1;
-}
+} */
 .dropdown-creat {
     background-color:var(--menu);
     opacity: 0;
@@ -268,6 +271,14 @@ body{
 .dropdown-creat a{
     display: block;
     padding:10px;
+}
+.dropdown-creat.demo{
+  opacity:1;
+}
+button{
+  background-color: var(--menu);
+  border:1px solid transparent;
+
 }
 *,
 *:before,
@@ -377,8 +388,6 @@ body{
     justify-content: center;
     height: 100%;
     font-size: 16px;
-    
-
 }
 
 .wap{
@@ -431,62 +440,4 @@ body{
 section {
     margin:32px 0px 40px;
 }
-.div-2-2{
-    background: linear-gradient(256deg, #d5baf3 1.49%, #f6ebff 100%);
-    box-shadow: 0 2px 4px #0000001a;
-    display: flex;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    position: relative;
-    border-radius: .75rem;
-}
-.character1{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    flex-direction: column;
-    height: 100%;
-    display: flex;
-}
-.text1{
-    color: rgba(136,84,192);
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-family: Quicksand, Helvetica, Arial;
-}
-.point{
-    align-items: center;
-    flex-direction: row;
-    cursor: pointer;
-    display: flex;
-}
-.icon{
-    width: 3rem;
-    z-index: 2;
-    display: block;
-}
-.character2{
-    overflow: hidden;
-    width: 270px;
-    height: 245px;
-}
-.imagecharac{
-    width: 245px;
-    height: 245px;
-    border-radius: 50%;
-}
-.button1{
-    width: 2rem;
-    height: 2rem;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    position: absolute;
-    box-sizing: border-box;
-    background-color: rgba(136,84,192);
-    border-color: #8e8fb5;
-    right: 10px;
-    top: 10px;
-}
+
