@@ -440,4 +440,62 @@ button{
 section {
     margin:32px 0px 40px;
 }
-
+.div-2-2{
+    background: linear-gradient(256deg, #d5baf3 1.49%, #f6ebff 100%);
+    box-shadow: 0 2px 4px #0000001a;
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    border-radius: .75rem;
+}
+.character1{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+}
+.text1{
+    color: rgba(136,84,192);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: Quicksand, Helvetica, Arial;
+}
+.point{
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    display: flex;
+}
+.icon{
+    width: 3rem;
+    z-index: 2;
+    display: block;
+}
+.character2{
+    overflow: hidden;
+    width: 270px;
+    height: 245px;
+}
+.imagecharac{
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+}
+.button1{
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(136,84,192);
+    border-color: #8e8fb5;
+    right: 10px;
+    top: 10px;
+}
