@@ -17,7 +17,7 @@
                 <li><img src="../img/logo.png" alt="logo" id="logo"></li>
                 <li>
                     <form class="search-form">
-                        <input type="text" class="search-input" placeholder="">
+                        <input type="text" class="search-input" placeholder="search...">
                         <button id="nut-tk">
                             <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         </button>
@@ -29,8 +29,8 @@
                 <li>
                     <div class="menu-creat">
                         <span><i class="fa-solid fa-puzzle-piece"></i></span>
-                        Creat Quizz</a>
-                        <div class="dropdown-creat">
+                        <button onclick="myFunction()">Creat Quizz</button>
+                        <div class="dropdown-creat" id ="mycreat">
                             <a href="#">Normal Quizz</a>
                             <a href="#">Quick Quizz</a>
                             <a href="#">Test</a>
@@ -47,21 +47,21 @@
                 <li>
                     <div class="menu-setting">
                         <span><i class="fa-solid fa-gears"></i></span>
-                        Setting</a>
-                        <div class="dropdown-setting">
+                        <button onclick="setFunction()">Setting</button>
+                        <div class="dropdown-setting" id ="myset">
                             <div class="audio">
                                 <div class="music">Music</div>
                                 <div class="toggle-switch">
                                     <label class="switch">
-                                        <input type="checkbox">
+                                        <input type="checkbox" >
                                         <span class="slider round"></span>
                                     </label>
                                 </div>
                             </div>
                             <a href="#">Sound effect </a>
                             <a href="#">Memes</a>
+                            
                         </div>
-                    </div>
                 </li>
                 <li>
                     <a href="../login/login.html"><span>
@@ -556,7 +556,7 @@
             </div>
         </footer>
     </div>
-    <script src="../JavaScript/ds_quiz.js"></script>
+    <script src="../JavaScript/quiz.js"></script>
 </body>
 
 </html>
