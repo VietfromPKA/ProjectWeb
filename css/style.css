@@ -505,7 +505,7 @@ section {
     display: flex;
     width: 100%;
     height: 50%;
-    background-color: #f0f0f0;
+    background-color: var(--trang);
     padding: 1%;
     margin: 0% 3% 5% -5%;
     border-radius: 15px;
@@ -550,7 +550,7 @@ section {
     display: flex;
     width: 100%;
     height: 80%;
-    background-color: #f0f0f0;
+    background-color: var(--trang);
     padding: 1%;
     margin: 0% 3% 0% -5%;
     border-radius: 15px;}
@@ -676,5 +676,12 @@ section {
     border-color: #8e8fb5;
     right: 10px;
     top: 10px;
+}
+#lop0 h2{
+  margin: 0% 0% 4% 0%;
+}
+.doitac a{
+  padding: 2.3%;
+
 }
 
