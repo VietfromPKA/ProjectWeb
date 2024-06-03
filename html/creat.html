@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creat Quizz</title>
+    <title>Multiple Choice Question</title>
+    <link rel="stylesheet" href="../css/creat.css">
 </head>
 <body>
-    <section class="questions-section">
-        <div class="text-quiz">Creat new Quizz</div>
-        <div class="search-bar-v2" id="edit-search">
-            <div class="search-column">
-                <div class="column-left">
-                    <input type="text" class="search-input" placeholder="search...">
-                </div>
-                <div class="column-right">
-                    <button><i class=""></i>
-                        <span class="title" title="Tìm kiếm câu hỏi">Tìm kiếm câu hỏi</span>                        
-                    </button>
-                </div>
+    <div class="container">
+        <div class="question-box">
+            <textarea placeholder="Nhập câu hỏi vào đây"></textarea>
+        </div>
+        <div class="options">
+            <div class="option blue">
+                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                <input type="checkbox">
+            </div>
+            <div class="option orange">
+                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                <input type="checkbox">
+            </div>
+            <div class="option yellow">
+                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                <input type="checkbox">
+            </div>
+            <div class="option red">
+                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                <input type="checkbox">
             </div>
         </div>
-    </section>
- 
-    
+        <div class="buttons">
+            <button>Thêm tùy chọn</button>
+        </div>
+    </div>
 </body>
 </html>
