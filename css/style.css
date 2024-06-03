@@ -89,7 +89,7 @@ body{
 
 .div-2-1, .div-2-2{
     height: 250px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
 }
 
@@ -99,16 +99,14 @@ body{
     margin-left: 5%;
     background-image: url(../img/back1.png),
     linear-gradient(0, rgba(182, 3, 3, 0), rgba(252, 151, 0, 0.985));
-    box-shadow: 5px 5px rgb(198, 184, 184);
     
 }
 .div-2-2{
     display: flex;
-    background-color: rgb(212, 210, 207);
     width: 35%;
     margin: 0% 5% 0% 10%;
-    box-shadow: 5px 5px rgb(198, 184, 184);
     position: relative;
+    box-shadow: 5px 5px rgb(198, 184, 184);
 }
 .diva1{
     height: 50%;
@@ -686,6 +684,13 @@ section {
 }
 .doitac a{
   padding: 2.3%;
-
+}
+.doitac:hover{
+  box-shadow: 0 0 10px 5px #d90f0f;
+  border-radius: 15px;
+}
+.doitac img:hover{
+  box-shadow: 0 0 10px 1px #d90f0f;
+  border-radius: 15px;
 }
 
