@@ -5,26 +5,52 @@
     list-style: none;
 }
 .back button{
-    display: inline;
+    width: 10%;
+    height: 30px;
+    background-color: #f1f0f8;
+    margin : 2% 2% 2% 2%;
 }
 .thanhtoan{
     display: flex;
-    width: 80%;
-    height: 1000px;
-    background-color: #bc2626;
-    margin: 5% 5% 5% 5%;
     padding: 5% 5% 5% 5%;
+    background-color: #2e15d1;
+    margin: 2% 10% 2% 10%;
+    border-radius: 30px;
 }
 .qr img{
     display: inline;
-    width: 50px;
-    height: 50px;
-
+    width: 80%;
+    height: 40%;
+    padding-top: 5%;
 }
 .qr{
-    display: flex;
-    
+    display: inline;
+    width: 35%;
+    height: 100%;
+    margin-right: 5%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;    
+}
+.qr h2{
+    padding: 5%;
+}
+.thongtin p{
+    margin-left: 5%;
+    margin: 5%;
 }
 .thongtin{
-    display: inline;
+    display: block;
+    width: 45%;
+    margin-left: 15%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.thonhtin h2, .thongtin p{
+    padding-top: 2%;
+}
+.thongtin h2{
+    text-align: center;
+    margin: 5%;
 }
