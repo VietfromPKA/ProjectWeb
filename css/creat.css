@@ -74,7 +74,8 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+
 }
 
 .buttons button:hover {
