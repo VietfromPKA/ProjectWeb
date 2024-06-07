@@ -1,56 +1,107 @@
-*{
-    padding: 0;
+body, h2, p {
     margin: 0;
-    box-sizing: border-box;
-    list-style: none;
+    padding: 0;
 }
-.back button{
-    width: 10%;
-    height: 30px;
-    background-color: #f1f0f8;
-    margin : 2% 2% 2% 2%;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f3;
+    padding: 20px;
+    color: #333;
 }
-.thanhtoan{
+
+.back {
+    margin-bottom: 20px;
+}
+
+.back button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back button:hover {
+    background-color: #218838;
+}
+
+.thanhtoan {
     display: flex;
-    padding: 5% 5% 5% 5%;
-    background-color: #2e15d1;
-    margin: 2% 10% 2% 10%;
-    border-radius: 30px;
-}
-.qr img{
-    display: inline;
-    width: 80%;
-    height: 40%;
-    padding-top: 5%;
-}
-.qr{
-    display: inline;
-    width: 35%;
-    height: 100%;
-    margin-right: 5%;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 15px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
 }
-.qr h2{
-    padding: 5%;
+.ngMua, .ngBan{
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
-.thongtin p{
-    margin-left: 5%;
-    margin: 5%;
+
+.qr {
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #eef2f3;
 }
-.thongtin{
+
+.qr img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    width: 45%;
-    margin-left: 15%;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
 }
-.thonhtin h2, .thongtin p{
-    padding-top: 2%;
+
+.qr h2 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 15px;
 }
-.thongtin h2{
-    text-align: center;
-    margin: 5%;
+
+.qr p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.qr p i {
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+.thongtin {
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.thongtin h2 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 15px;
+    padding: 0px 10px 0px 10px;
+}
+
+.thongtin p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+    padding: 0px 10px 0px 10px;
+}
+
+@media (max-width: 768px) {
+    .thanhtoan {
+        flex-direction: column;
+    }
+
+    .qr, .thongtin {
+        flex: 1 1 100%;
+        padding: 10px;
+        border-right: none;
+    }
 }
