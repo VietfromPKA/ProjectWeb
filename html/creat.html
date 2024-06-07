@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="../css/creat.css">
 </head>
 <body>
-    <div class="container">
-        <div class="question-box">
-            <textarea placeholder="Nhập câu hỏi vào đây"></textarea>
+    <div class="main-container">
+        <div id="questionsContainer">
+            <div class="container">
+                <div class="question-box">
+                    <textarea placeholder="Nhập câu hỏi vào đây"></textarea>
+                </div>
+                <div class="options">
+                    <div class="option maubox">
+                        <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                        <input type="checkbox">
+                    </div>
+                    <div class="option maubox">
+                        <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                        <input type="checkbox">
+                    </div>
+                    <div class="option maubox">
+                        <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                        <input type="checkbox">
+                    </div>
+                    <div class="option maubox">
+                        <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="options">
-            <div class="option blue">
-                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
-                <input type="checkbox">
-            </div>
-            <div class="option orange">
-                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
-                <input type="checkbox">
-            </div>
-            <div class="option yellow">
-                <input type="text" placeholder="Nhập tùy chọn trả lời ở đây">
-                <input type="checkbox">
-            </div>
+        <div class="buttons">
+            <button id="addQuestionBtn">Thêm câu hỏi và tùy chọn</button>
         </div>
-            <div class="buttons">
-                <button id="addOptionBtn">Thêm tùy chọn</button>
-            </div>
-            <div class="options" id="optionsContainer"></div>        
     </div>
 </body>
 <script src="../JavaScript/creat.js"></script>
-
 </html>

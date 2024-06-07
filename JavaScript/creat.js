@@ -1,27 +1,42 @@
-const colors = ['blue', 'orange', 'yellow'];
-let colorIndex = 0;
+// creat.js
+document.addEventListener('DOMContentLoaded', () => {
+    const addQuestionBtn = document.getElementById('addQuestionBtn');
+    const questionsContainer = document.getElementById('questionsContainer');
 
-document.getElementById('addOptionBtn').addEventListener('click', function() {
-    const newOptionDiv = document.createElement('div');
-    newOptionDiv.classList.add('option', colors[colorIndex]);
-    colorIndex = (colorIndex + 1) % colors.length;
-    const newTextInput = document.createElement('input');
-    newTextInput.type = 'text';
-    newTextInput.placeholder = 'Nhập tùy chọn trả lời ở đây';
-    const newCheckboxInput = document.createElement('input');
-    newCheckboxInput.type = 'checkbox';
+    addQuestionBtn.addEventListener('click', () => {
+        const newQuestionContainer = document.createElement('div');
+        newQuestionContainer.classList.add('container');
 
+        const questionBox = document.createElement('div');
+        questionBox.classList.add('question-box');
 
-    const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'X';
-    deleteButton.classList.add('delete-btn');
-    deleteButton.addEventListener('click', function() {
-        newOptionDiv.remove();
+        const textarea = document.createElement('textarea');
+        textarea.placeholder = 'Nhập câu hỏi vào đây';
+        questionBox.appendChild(textarea);
+
+        const newOptionsContainer = document.createElement('div');
+        newOptionsContainer.classList.add('options');
+
+        for (let i = 0; i < 4; i++) {
+            const optionDiv = document.createElement('div');
+            optionDiv.classList.add('option', 'maubox');
+
+            const inputText = document.createElement('input');
+            inputText.type = 'text';
+            inputText.placeholder = 'Nhập tùy chọn trả lời ở đây';
+
+            const inputCheckbox = document.createElement('input');
+            inputCheckbox.type = 'checkbox';
+
+            optionDiv.appendChild(inputText);
+            optionDiv.appendChild(inputCheckbox);
+
+            newOptionsContainer.appendChild(optionDiv);
+        }
+
+        newQuestionContainer.appendChild(questionBox);
+        newQuestionContainer.appendChild(newOptionsContainer);
+
+        questionsContainer.appendChild(newQuestionContainer);
     });
-
-    
-    newOptionDiv.appendChild(newTextInput);
-    newOptionDiv.appendChild(newCheckboxInput);
-    newOptionDiv.appendChild(deleteButton);
-    document.getElementById('optionsContainer').appendChild(newOptionDiv);
 });
