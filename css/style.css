@@ -687,6 +687,10 @@ section {
     right: 10px;
     top: 10px;
 }
+.button1:hover{
+  background-color: #8D66AF;
+  color: white;
+}
 #lop0 h2{
   margin: 0% 0% 4% 0%;
 }
