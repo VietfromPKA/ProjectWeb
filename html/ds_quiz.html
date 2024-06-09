@@ -11,7 +11,6 @@
 
 <body>
     <div class="bgr">
-
         <div class="div-1">
             <ul class="menu">
                 <li><img src="../img/logo.png" alt="logo" id="logo"></li>
@@ -31,9 +30,8 @@
                         <span><i class="fa-solid fa-puzzle-piece"></i></span>
                         <button onclick="myFunction()">Creat Quizz</button>
                         <div class="dropdown-creat" id ="mycreat">
-                            <a href="#">Normal Quizz</a>
-                            <a href="#">Quick Quizz</a>
-                            <a href="#">Test</a>
+                            <a href="../html/creat.html">Normal Quizz</a>
+                            <a href="../html/flashcard.html">Flashcard</a>
                         </div>
                     </div>
 
@@ -53,10 +51,13 @@
                                 <div class="music">Music</div>
                                 <div class="toggle-switch">
                                     <label class="switch">
-                                        <input type="checkbox" >
+                                        <input id="play-pause" type="checkbox" >
                                         <span class="slider round"></span>
                                     </label>
                                 </div>
+                                <audio id="track">
+                                    <source src="../music/funny-kids_59sec-190857.mp3" type="audio/mpeg" />
+                                  </audio>
                             </div>
                             <a href="#">Sound effect </a>
                             <a href="#">Memes</a>
