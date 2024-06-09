@@ -43,7 +43,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .option {
     display: flex;
     align-items: center;
@@ -68,6 +67,7 @@ body {
 
 .buttons {
     text-align: center;
+    margin-top: 20px; /* Thêm margin-top */
 }
 
 .buttons button {
@@ -98,21 +98,28 @@ body {
     right: 10px;
     transition: background-color 0.3s ease;
 }
-#deleteQuestion{
-    font-size: 29px;
-}
+
 #addQuestionBtn {
-    font-size: 29px; 
+    background-color: #28a745; /* Thay đổi màu nút thêm */
+    color: #fff;
+    padding: 7px 21px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.deleteQuestionBtn:hover {
-    background-color: #c82333;
+#addQuestionBtn:hover {
+    background-color: #218838; /* Thay đổi màu hover của nút thêm */
 }
+
 .option.blue{
     background-color: #0c4f96;
     padding: 10px;
     border-radius: 12px;
 }
+
 .option.orange{
     background-color: rgb(227, 118, 9);
     padding:10px;

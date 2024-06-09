@@ -29,6 +29,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const inputCheckbox = document.createElement('input');
             inputCheckbox.type = 'checkbox';
 
+            inputCheckbox.addEventListener('change', () => {
+                if (inputCheckbox.checked) {
+                    // Lặp qua tất cả các checkbox trong câu hỏi
+                    const siblingCheckboxes = newOptionsContainer.querySelectorAll('input[type="checkbox"]');
+                    siblingCheckboxes.forEach(siblingCheckbox => {
+                        // Nếu checkbox không phải là checkbox hiện tại
+                        if (siblingCheckbox !== inputCheckbox) {
+                            // Vô hiệu hóa checkbox đó
+                            siblingCheckbox.disabled = true;
+                        }
+                    });
+                } else {
+                    // Nếu checkbox không được chọn, bỏ vô hiệu hóa cho tất cả các checkbox
+                    const siblingCheckboxes = newOptionsContainer.querySelectorAll('input[type="checkbox"]');
+                    siblingCheckboxes.forEach(siblingCheckbox => {
+                        siblingCheckbox.disabled = false;
+                    });
+                }
+            });
+
             const deleteOptionBtn = document.createElement('button');
             deleteOptionBtn.classList.add('deleteOptionBtn');
             deleteOptionBtn.textContent = 'x';
@@ -55,5 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
         newQuestionContainer.appendChild(deleteQuestionBtn);
 
         questionsContainer.appendChild(newQuestionContainer);
+    });
+
+    const backButton = document.getElementById("backBtn");
+    backButton.addEventListener("click", () => {
+      window.location.href = "../index.html"; // Chuyển hướng người dùng về trang index.html
     });
 });
