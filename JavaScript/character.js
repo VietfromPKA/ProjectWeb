@@ -1,71 +1,38 @@
-const wrapper = document.querySelector(".wrapper"),
-  carousel = document.querySelector(".carousel"),
-  images = document.querySelectorAll(".carousel img"),
-  buttons = document.querySelectorAll(".button"),
-  backButton = document.querySelector(".back-button");
+document.addEventListener("DOMContentLoaded", function() {
+  // Chọn tất cả các ảnh trong image selector
+  const images = document.querySelectorAll(".image-selector img");
 
-let imageIndex = 1,
-  intervalId;
+  // Chọn container của ảnh lớn
+  const largeImage = document.getElementById("large-image");
 
-// Define function to start automatic image slider
-const autoSlide = () => {
-  // Start the slideshow by calling slideImage() every 2 seconds
-  intervalId = setInterval(() => slideImage(++imageIndex), 2000);
-};
+  // Lấy đường dẫn của ảnh đầu tiên trong danh sách
+  const firstImageSrc = images[0].getAttribute("src");
 
-// Call autoSlide function on page load
-autoSlide();
+  // Đặt đường dẫn của ảnh lớn là đường dẫn của ảnh đầu tiên
+  largeImage.setAttribute("src", firstImageSrc);
 
-// A function that updates the carousel display to show the specified image
-const slideImage = () => {
-  // Calculate the updated image index
-  imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
-  // Update the carousel display to show the specified image
-  carousel.style.transform = `translateX(-${imageIndex * 100}%)`;
-};
-
-// A function that updates the carousel display to show the next or previous image
-const updateClick = (e) => {
-  // Stop the automatic slideshow
-  clearInterval(intervalId);
-  // Calculate the updated image index based on the button clicked
-  imageIndex += e.target.id === "next" ? 1 : -1;
-  slideImage(imageIndex);
-  // Restart the automatic slideshow
-  autoSlide();
-};
-
-// Add event listeners to the navigation buttons
-buttons.forEach((button) => button.addEventListener("click", updateClick));
-
-// Add mouseover event listener to wrapper element to stop auto sliding
-wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
-
-// Add mouseleave event listener to wrapper element to start auto sliding again
-wrapper.addEventListener("mouseleave", autoSlide);
-
-// Selectors variable and event listeners for selector buttons
-const selectors = document.querySelectorAll(".selector"); // Define selectors variable
-selectors.forEach((selector, index) => {
-  selector.addEventListener("click", () => {
-    clearInterval(intervalId);
-    imageIndex = index;
-    slideImage();
-    autoSlide();
+  // Duyệt qua từng ảnh và thêm sự kiện click
+  images.forEach(function(image) {
+      image.addEventListener("click", function() {
+          // Lấy đường dẫn của ảnh được click
+          const src = image.getAttribute("src");
+          
+          // Đặt đường dẫn của ảnh lớn là đường dẫn của ảnh được click
+          largeImage.setAttribute("src", src);
+      });
   });
-});
 
-// Function to update selector buttons
-const updateSelectors = () => {
-  selectors.forEach((selector, index) => {
-    selector.classList.toggle("active", index === imageIndex);
+  // Lấy các nút "Back" và "Save"
+  const backButton = document.querySelector(".back-button");
+  const saveButton = document.querySelector(".save-button");
+
+  // Đặt sự kiện click cho nút "Back"
+  backButton.addEventListener("click", function() {
+      window.location.href = "../index.html"; // Chuyển hướng về trang ../index.html
   });
-};
 
-// Initial update for selectors
-updateSelectors();
-
-// Event listener for the back button to navigate to another HTML page
-backButton.addEventListener("click", () => {
-  window.location.href = "../index.html"; // Replace with the actual path to the target HTML file
+  // Đặt sự kiện click cho nút "Save"
+  saveButton.addEventListener("click", function() {
+      window.location.href = "../index.html"; // Chuyển hướng về trang ../index.html
+  });
 });
