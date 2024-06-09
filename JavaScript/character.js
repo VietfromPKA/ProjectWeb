@@ -1,7 +1,8 @@
 const wrapper = document.querySelector(".wrapper"),
   carousel = document.querySelector(".carousel"),
   images = document.querySelectorAll(".carousel img"),
-  buttons = document.querySelectorAll(".button");
+  buttons = document.querySelectorAll(".button"),
+  backButton = document.querySelector(".back-button");
 
 let imageIndex = 1,
   intervalId;
@@ -42,3 +43,29 @@ wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 
 // Add mouseleave event listener to wrapper element to start auto sliding again
 wrapper.addEventListener("mouseleave", autoSlide);
+
+// Selectors variable and event listeners for selector buttons
+const selectors = document.querySelectorAll(".selector"); // Define selectors variable
+selectors.forEach((selector, index) => {
+  selector.addEventListener("click", () => {
+    clearInterval(intervalId);
+    imageIndex = index;
+    slideImage();
+    autoSlide();
+  });
+});
+
+// Function to update selector buttons
+const updateSelectors = () => {
+  selectors.forEach((selector, index) => {
+    selector.classList.toggle("active", index === imageIndex);
+  });
+};
+
+// Initial update for selectors
+updateSelectors();
+
+// Event listener for the back button to navigate to another HTML page
+backButton.addEventListener("click", () => {
+  window.location.href = "../index.html"; // Replace with the actual path to the target HTML file
+});
