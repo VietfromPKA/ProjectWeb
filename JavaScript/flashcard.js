@@ -8,7 +8,13 @@ const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
 let editBool = false;
 
-//Add question when user clicks 'Add Flashcard' button
+// Show Create flashcard Card when the page is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  container.classList.add("hide");
+  addQuestionCard.classList.remove("hide");
+});
+
+// Add question when user clicks 'Add Flashcard' button
 addQuestion.addEventListener("click", () => {
   container.classList.add("hide");
   question.value = "";
@@ -16,7 +22,7 @@ addQuestion.addEventListener("click", () => {
   addQuestionCard.classList.remove("hide");
 });
 
-//Hide Create flashcard Card
+// Hide Create flashcard Card
 closeBtn.addEventListener(
   "click",
   (hideQuestion = () => {
@@ -29,7 +35,7 @@ closeBtn.addEventListener(
   })
 );
 
-//Submit Question
+// Submit Question
 cardButton.addEventListener(
   "click",
   (submitQuestion = () => {
@@ -48,20 +54,20 @@ cardButton.addEventListener(
   })
 );
 
-//Card Generate
+// Card Generate
 function viewlist() {
   var listCard = document.getElementsByClassName("card-list-container");
   var div = document.createElement("div");
   div.classList.add("card");
-  //Question
+  // Question
   div.innerHTML += `
   <p class="question-div">${question.value}</p>`;
-  //Answer
+  // Answer
   var displayAnswer = document.createElement("p");
   displayAnswer.classList.add("answer-div", "hide");
   displayAnswer.innerText = answer.value;
 
-  //Link to show/hide answer
+  // Link to show/hide answer
   var link = document.createElement("a");
   link.setAttribute("href", "#");
   link.setAttribute("class", "show-hide-btn");
@@ -73,7 +79,7 @@ function viewlist() {
   div.appendChild(link);
   div.appendChild(displayAnswer);
 
-  //Edit button
+  // Edit button
   let buttonsCon = document.createElement("div");
   buttonsCon.classList.add("buttons-con");
   var editButton = document.createElement("button");
@@ -87,7 +93,7 @@ function viewlist() {
   buttonsCon.appendChild(editButton);
   disableButtons(false);
 
-  //Delete Button
+  // Delete Button
   var deleteButton = document.createElement("button");
   deleteButton.setAttribute("class", "delete");
   deleteButton.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
@@ -101,7 +107,7 @@ function viewlist() {
   hideQuestion();
 }
 
-//Modify Elements
+// Modify Elements
 const modifyElement = (element, edit = false) => {
   let parentDiv = element.parentElement.parentElement;
   let parentQuestion = parentDiv.querySelector(".question-div").innerText;
@@ -114,10 +120,16 @@ const modifyElement = (element, edit = false) => {
   parentDiv.remove();
 };
 
-//Disable edit and delete buttons
+// Disable edit and delete buttons
 const disableButtons = (value) => {
   let editButtons = document.getElementsByClassName("edit");
   Array.from(editButtons).forEach((element) => {
     element.disabled = value;
   });
 };
+
+const backButton = document.getElementById("back-flashcard");
+backButton.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+
